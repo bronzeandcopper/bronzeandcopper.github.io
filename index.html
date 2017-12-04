@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+		
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bronze and Copper</title>
+		<style>
+			/*-- font-family: 'Poppins', sans-serif;
+					font-family: 'Bitter', serif; --*/
+				
+			h1,h2,h3,h4,h5 {
+				font-family: 'Poppins', sans-serif;
+			}
+			
+			div p {
+				font-family: 'Bitter', serif;
+			}
+			
+			/*-- OTHER DIVS --*/
+			
+			#wrapper {
+				width: 100%;
+				margin-left: 0px;
+				padding: 0px;
+				margin-top: 100px;
+				margin-bottom: 50px;
+				background-color: white;	 
+			}
+			
+
+			/*-- STICKY NAV BAR --*/
+			
+			#navbar {
+				position: fixed;
+				top: 0px;
+				left: 0px;    
+				width: 100%;
+				background-color: #434343;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-family:'Poppins', sans-serif;
+				z-index: 1;    
+			}
+			
+			#logo img {
+				width: 50px;
+				margin-left: 30px;
+				margin-right: 30px;
+				float: left;    
+			}
+			
+			#logotext h1 {
+				color: white;
+				margin-top: 20px;
+				font-size: 25px;
+			}
+			
+			nav ul {
+				padding: 0px 40px 0px 20px;
+				margin: -55px 0px 0px 0px;
+				float: right;
+				font-size: 25px;
+				text-decoration: none;
+			}
+    
+			nav li {
+				list-style-type: none;
+				display: inline;
+				padding: 0px 30px 0px 10px;
+				color: white;
+				text-decoration: none;
+			}    
+    
+			nav a {    
+				padding: 30px 30px 30px 30px;
+				text-decoration: none;
+			} 
+ 
+			nav a:link {
+				background-color: #434343;
+				color: white;
+				text-decoration: none
+			}    
+    
+			nav a:hover {
+				background-color: white;    
+				color: black;
+				text-decoration: none;     
+			}
+			
+			nav a:visited {
+				background-color: #434343;
+				color: white;
+				text-decoration: none;
+			}
+			
+			nav a:active {
+				background-color: white;
+				color: black;
+				text-decoration: overline;
+			}
+			
+			/*-- SLIDESHOW --*/
+			
+			* {box-sizing:border-box}
+
+			/* Slideshow container */
+			.slideshow-container {
+				width: 100%;
+				position: relative;
+				top: -20px;
+			}
+
+			.mySlides {
+					display: none;
+			}
+
+			/* Next & previous buttons */
+			.prev, .next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				margin-top: -22px;
+				padding: 16px;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+				background-color: rgba(0,0,0,0.8);
+			}
+
+			/* The dots/bullets/indicators */
+			.dot {
+				cursor:pointer;
+				height: 15px;
+				width: 15px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+			}
+
+			.active, .dot:hover {
+				background-color: #717171;
+			}
+
+			/* Fading animation */
+			.fade {
+				-webkit-animation-name: fade;
+				-webkit-animation-duration: 1.5s;
+				animation-name: fade;
+				animation-duration: 1.5s;
+			}
+
+			@-webkit-keyframes fade {
+				from {opacity: .4} 
+				to {opacity: 1}
+			}
+
+			@keyframes fade {
+				from {opacity: .4} 
+				to {opacity: 1}
+			}
+			
+			/*-- ABOUT US --*/
+			
+			#column3 {
+				float: left;
+				width: 50%;
+				padding 5px;
+			}
+			
+			#row3:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			
+			#column2 {
+				float: none;
+				width: 100%;
+				padding-top: 4%;
+			}
+			
+			#row2:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.menutitle1 {
+				border-bottom: solid 1px black;
+				font-size: 25px;
+				text-align: center;
+			}
+			
+			#socialmedia img {
+				width: 10%;
+				float: left;
+				margin: 0% 4% 0% 0%; 
+			}
+			
+			.abouttext {
+				font-size: 25px;
+				margin-top: 5%;
+			}
+			
+			.aboutpic {
+				margin-top: 5%;
+				margin-left: 10%;
+				margin-right: -10%;
+			}
+			
+			/*-- MENU SECTION --*/
+			
+			#column {
+				float:left;
+				width: 33.33%;
+				padding: 5px;
+			}
+			
+			#row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			
+			#column1 {
+				float: none;
+				width: 100%;
+				padding-top: 4%;
+			}
+			
+			#row1:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.menutitle {
+				border-bottom: solid 1px black;
+				font-size: 25px;
+				text-align: center;
+			}
+			
+			div.gallery {
+				margin: .25% 0% .25% 0%;
+				float: left;
+				width: 33.1%;
+				position: relative; 
+			}
+ 
+			div.gallery img {
+				width: 100%;
+				height: auto;
+				display: block;
+			} 
+			
+			.overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 100%;
+				width: 100%;
+				opacity: 0;
+				transition: .5s ease;
+				background-color: whitesmoke;
+			}
+
+			.gallery:hover .overlay {
+				opacity: 1;
+			}    
+
+			.text {
+				color: black;
+				font-size: 35px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+			 	font-family: Poppins, sans-serif;
+				text-align: center;
+			}
+			
+			.seemore a {
+				text-decoration: none;
+				color: white;
+			}
+			
+			/*-- CONTACT US --*/
+			
+			#column4 {
+				float: left;
+				width: 50%;
+				padding 5px;
+			}
+			
+			#row4:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			
+			#column5 {
+				float: none;
+				width: 100%;
+				padding-top: 0%;
+			}
+			
+			#row5:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.menutitle2 {
+				border-bottom: solid 1px black;
+				font-size: 25px;
+				text-align: center;
+			}
+			
+			.contacttext {
+				font-size: 25px;
+				margin-top: 1%;
+				margin-left: 5%;
+				margin-right: 0%;
+			}
+			
+			.contactmaps {
+				margin-top: -21%;
+				margin-left: 60%;
+				margin-right: 0%;
+			}
+			
+			button.css3button {
+				font-family: 'Poppins', sans-serif;
+				font-size: 25px;
+				color: #ffffff;
+				padding: 25px 45px;
+				background: -moz-linear-gradient(
+					top,
+					#000000 0%,
+					#000000);
+				background: -webkit-gradient(
+					linear, left top, left bottom,
+					from(#000000),
+					to(#000000));
+				-moz-border-radius: 0px;
+				-webkit-border-radius: 0px;
+				border-radius: 0px;
+				border: 3px solid #171717;
+				-moz-box-shadow:
+					0px 0px 0px rgba(000,000,000,0),
+					inset 0px 0px 0px rgba(087,087,087,0);
+				-webkit-box-shadow:
+					0px 0px 0px rgba(000,000,000,0),
+					inset 0px 0px 0px rgba(087,087,087,0);
+				box-shadow:
+					0px 0px 0px rgba(000,000,000,0),
+					inset 0px 0px 0px rgba(087,087,087,0);
+				text-shadow:
+					0px 0px 0px rgba(000,000,000,0),
+					0px 0px 0px rgba(255,255,255,0);
+			}
+
+			input {
+				padding: 25px 45px;
+				font-family: 'Poppins', sans-serif;
+				font-size: 25px;
+			}
+			
+			/*-- FOOTER --*/
+
+			
+		</style>
+		<link href="https://fonts.googleapis.com/css?family=Bitter|Poppins" rel="stylesheet">
+		</head>
+		
+		<body>
+				<div id="wrapper">
+						
+				<div id="navbar">
+					<div id="logo"><img src="./LOGO/COFFEE.png" alt="Bronze and Copper Coffee" /></div>
+					<div id="logotext"><h1>Bronze &amp; Copper Coffee</h1></div>
+						<nav>
+							<ul id="navmenu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#menu">Menu</a></li>
+								<li><a href="#connect">Connect</a></li>
+								<li><a href="reserve.html">Reserve</a></li>
+							</ul>
+						</nav>
+					</div>
+						
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<img src="./IMAGES/IMAGE_BANNER_1366X750/BANNER1.jpg" style="width:100%"/>
+						</div>
+
+						<div class="mySlides fade">
+							<img src="./IMAGES/IMAGE_BANNER_1366X750/BANNER2.jpg" style="width:100%"/>
+						</div>
+
+						<div class="mySlides fade">
+							<img src="./IMAGES/IMAGE_BANNER_1366X750/BANNER3.jpg" style="width:100%"/>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					
+					<br/>
+
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span> 
+						<span class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span> 
+					</div>	
+								
+				<a name="#about">
+					<div id="row2">
+						<div id="column2" class="menutitle1">
+							<h1>ABOUT US</h1>
+						</div>
+					</div>
+					<div id="row3">
+						<div id="column3" class="aboutpic">
+							<img src="IMAGES/ABOUT_BANNER_1X1/BANNER1.jpg" alt="Coffee1" style="width: 50%"/>
+						</div>
+						<div id="column3" class="abouttext">
+							<p>Independently owned &amp; operated from Vancouver, Canada.<br/>Specializing in producing handcrafted artisan roasted coffee.</p>
+							<p>We offer a revolving assortment of disctinctive single-origin beans<br/>as well as exclusive Bronze &amp; Copper Coffee crafted blends.<br/>Using modest production methods, we are able to approach each<br/>individual roast as an opportunity to elevate and preserve<br/>our quality and taste.</p>
+							<p><br/>Follow us at:</p>
+							<div id="socialmedia"><a href="https://www.facebook.com/"><img src="IMAGES/facebook-logo-buttonB.png" alt="Facebook"/></a></div>
+							<div id="socialmedia"><a href="https://www.instagram.com/"><img src="IMAGES/instagram-logoB.png" alt="Instagram" /></a></div>
+							<div id="socialmedia"><a href="https://www.twitter.com/"><img src="IMAGES/twitter-logo-buttonB.png" alt="Twitter" /></a></div>
+						</div>
+					</div>
+				</a>
+					
+				<a name="#menu">
+					<div id="row1">
+						<div id="column1" class="menutitle">
+							<h1>FOOD &amp; DRINK SELECTIONS</h1>
+						</div>
+					</div>
+					<br/><br/><br/><br/><br/>
+					<div id="row">
+						<div class="gallery" id="column">
+								<img src="IMAGES/MENU_BANNER_433X750/BANNER1" alt="Breakfast" class="image" style="width: 100%"/>
+								<div class="overlay">
+    							<div class="text">
+										<h3><u>BREAKFAST</u></h3>
+										<p>Canadian Breakfast<br/>Nalu Bowl<br/>Acai Bowl<br/>Quinoa Granola<br/>Salmon &amp; Rye</p>
+										<br/>
+										<div class="seemore">
+											<button type="submit" name="submit" value="submitform" class="css3button"><a href="menu.html">SEE MORE</a></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery" id="column">
+								<img src="IMAGES/MENU_BANNER_433X750/BANNER2.jpg" alt="Lunch" class="image" style="width: 100%"/>
+								<div class="overlay">
+									<div class="text">
+										<h3><u>LUNCH</u></h3>
+										<p>Roast Chicken<br/>Pad Thai<br/>Ox Tail Fried Rice<br/>Szechuan Chicken<br/>Singaporean Curry</p>
+										<br/>
+										<div class="seemore">
+											<button type="submit" name="submit" value="submitform" class="css3button"><a href="menu.html">SEE MORE</a></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery" id="column">
+								<img src="IMAGES/MENU_BANNER_433X750/BANNER3" alt="Drink" class="image" style="width: 100%"/>
+								<div class="overlay">
+									<div class="text">
+										<h3><u>DRINK</u></h3>
+										<p>Pour Over<br/>Espresso<br/>Cortado<br/>Cold Brew<br/>Chai</p>
+										<br/>
+										<div class="seemore">
+											<button type="submit" name="submit" value="submitform" class="css3button"><a href="menu.html">SEE MORE</a></button>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</a>
+				
+				<a name="#contact">
+					<div id="row5">
+						<div id="column5" class="menutitle2">
+								<h1>CONNECT WITH US</h1>
+						</div>
+					</div>
+					<div id="row4">
+						<div id="column4" class="contacttext">
+							<p>7428 14th Avenue<br/>Burnaby, V2N 0C5<br/>British Columbia, Canada<br/><br/>+1 (604) 928 2817<br/><br/>contact@bronzeandcopper.com</p>
+							<br/>
+							<form method="post" enctype="text/plain" action="mailto:marco.tjokro@outlook.com">
+								<input type="email" name="email" id="email" size="45" required="required" placeholder="Subscribe to our e-newsletter">
+								<button type="submit" name="submit" value="submitform" class="css3button">SUBMIT</button>
+							</form>
+						</div>
+						<div id="column4" class="contactmaps">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30210.683493320634!2d-122.92872471920171!3d49.21439462624724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548677cfc920cd17%3A0x8d9263172bf6af61!2s7428+14th+Ave%2C+Burnaby%2C+BC+V3N+1Z8!5e0!3m2!1sen!2sca!4v1512347082597" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</a>
+					
+					
+				</div>
+				
+				<script>
+					var slideIndex = 1;
+						showSlides(slideIndex);
+
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {slideIndex = 1}    
+						if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+						}
+						for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block";  
+						dots[slideIndex-1].className += " active";
+					}
+				</script>
+		</body>
+		
+</html>
