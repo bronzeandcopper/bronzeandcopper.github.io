@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Menu</title>
+	<title>Reserve</title>
 	<style>
-			/*-- font-family: 'Poppins', sans-serif;
+		/*-- font-family: 'Poppins', sans-serif;
 					font-family: 'Bitter', serif; --*/
 				
 			h1,h2,h3,h4,h5 {
@@ -118,9 +119,9 @@
 				display:none;
 			}
 		
-			/*-- MENU SELECTIONS --*/
+			/*-- FORMS --*/
 		
-			#column1 {
+			#column1 {	
 				float: none;
 				width: 100%;
 				padding-top: 1%;
@@ -131,26 +132,15 @@
 				display: block;
 				clear: both;
 			}
-		
+
 			#column2 {
 				float: left;
-				width: 50%;
+				width: 100%;
 				padding-top: 1%;
+				padding-bottom: 5%;
 			}
-			
+
 			#row2:after {
-				content: "";
-				display: block;
-				clear: both;
-			}
-		
-			#column3 {
-				float: left;
-				width: 25%;
-				padding-top: 1%;
-			}
-			
-			#row3:after {
 				content: "";
 				display: block;
 				clear: both;
@@ -162,40 +152,50 @@
 				text-align: center;
 			}
 		
-			.menuheader1 {
-				font-size: 25px;
-				text-align: center;
-			}
-			
-			.menuheader2 {
-				font-size: 25px;
-				text-align: center;
-			}
-			
 			.menucontent1 {
-				font-size: 25px;
-				text-align: right;
-				line-height: 200%;
+				font-size: 30px;
+				text-align: center;
+				line-height: 300%;
 			}
 
-			.menucontent2 {
+			input {
+				padding: 15px 200px;
+				font-family: 'Poppins', sans-serif;
 				font-size: 25px;
 				text-align: center;
-				line-height: 200%;
 			}
-
-			.menucontent3 {
+		
+			button.css3button {
+				font-family: 'Poppins', sans-serif;
 				font-size: 25px;
-				text-align: right;
-				line-height: 200%;
+				color: #ffffff;
+				padding: 25px 45px;
+				background: -moz-linear-gradient(
+					top,
+					#000000 0%,
+					#000000);
+				background: -webkit-gradient(
+					linear, left top, left bottom,
+					from(#000000),
+					to(#000000));
+				-moz-border-radius: 0px;
+				-webkit-border-radius: 0px;
+				border-radius: 0px;
+				border: 3px solid #171717;
+				-moz-box-shadow:
+					0px 0px 0px rgba(000,000,000,0),
+					inset 0px 0px 0px rgba(087,087,087,0);
+				-webkit-box-shadow:
+					0px 0px 0px rgba(000,000,000,0),
+					inset 0px 0px 0px rgba(087,087,087,0);
+				box-shadow:
+					0px 0px 0px rgba(000,000,000,0),
+					inset 0px 0px 0px rgba(087,087,087,0);
+				text-shadow:
+					0px 0px 0px rgba(000,000,000,0),
+					0px 0px 0px rgba(255,255,255,0);
 			}
-
-			.menucontent4 {
-				font-size: 25px;
-				text-align: center;
-				line-height: 200%;
-			}
-			
+		
 			/*-- FOOTER --*/
 
 			#columnfoot {
@@ -225,6 +225,7 @@
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Bitter|Poppins" rel="stylesheet">
 </head>
+
 <body>
 	<div id="wrapper">
 						
@@ -244,39 +245,49 @@
 		
 		<div id="row">
 			<div id="column">
-				<img class="mySlides" src="IMAGES/MENU_HTML_1366/BANNER.jpg" alt="Lunch" style="width: 100%" />
-				<img class="mySlides" src="IMAGES/MENU_HTML_1366/BANNER1" alt="Lunch" style="width: 100%" />
-				<img class="mySlides" src="IMAGES/MENU_HTML_1366/BANNER2" alt="Lunch" style="width: 100%" />
+				<img class="mySlides" src="IMAGES/RESERVE_BANNER_1366x400/BANNER1.jpg" alt="Lunch" style="width: 100%" />
+				<img class="mySlides" src="IMAGES/RESERVE_BANNER_1366x400/BANNER2.jpg" alt="Lunch" style="width: 100%" />
+				<img class="mySlides" src="IMAGES/RESERVE_BANNER_1366x400/BANNER3.jpg" alt="Lunch" style="width: 100%" />
 			</div>
 		</div>
 		
 		<div id="row1">
 			<div id="column1" class="menutitle">
-				<h1>FOOD &amp; DRINK SELECTIONS</h1>
+				<h1>RESERVE YOUR TABLE</h1>
 			</div>
 		</div>
 		
 		<div id="row2">
-			<div id="column2" class="menuheader1">
-				<h2>All-day Breakfast &amp; Lunch</h2>
-			</div>
-			<div id="column2" class="menuheader2">
-				<h2>Specialty Coffee &amp; Drinks</h2>
-			</div>
-		</div>
-		
-		<div id="row3">
-			<div id="column3" class="menucontent1">
-			<p>Canadian Breakfast<br/>Nalu Bowl<br/>Acai Bowl<br/>Quinoa Granola<br/>Salmon &amp; Rye<br/>Roast Chicken<br/>Pad Thai<br/>Oxtail Fried Rice<br/>Pork Fried Rice<br/>Szechuan Chicken<br/>Thai Pork Belly<br/>Nasi Campur<br/>Indonesian Chicken Satay<br/>Nasi Banjar Bali<br/><br/><br/><br/><br/>*Tax included in the prices</p>
-			</div>
-			<div id="column3" class="menucontent2">
-			<p>10<br/>13<br/>13<br/>15<br/>15<br/>20<br/>15<br/>17<br/>20<br/>13<br/>15<br/>10<br/>10<br/>15</p>
-			</div>
-			<div id="column3" class="menucontent3">
-			<p>Pour Over Single Origin<br/>Cold Brew<br/>Espresso (Single/Double)<br/>Macchiato<br/>Ristretto<br/>Long Black<br/>Latte<br/>Flat White<br/>Cappuccino<br/>Piccolo Latte<br/>Mocha<br/>Affogato<br/>Coconut Water<br/>Fresh Juices<br/>Sparkling Water</p>
-			</div>
-			<div id="column3" class="menucontent4">
-			<p>15<br/>10<br/>3/4<br/>4<br/>7<br/>4<br/>7<br/>4<br/>7<br/>5<br/>5<br/>5<br/>7<br/>4<br/>2</p>
+			<div id="column2" class="menucontent1">
+				<form action="mailto:marco.tjokro@outlook.com" method="get">
+					<p>
+						Full Name
+						<br/>
+						<input type="text" name="name" id="name" required="required" placeholder="Full Name">
+						<br/>
+						E-mail Address
+						<br/>
+						<input type="email" name="email" id="email" required="required" placeholder="E-mail Address">
+						<br/>
+						Phone Number
+						<br/>
+						<input type="number" name="phone" id="phone" required="required" placeholder="Phone Number">
+						<br/>
+						Dining Date
+						<br/>
+						<input type="date" name="date" id="date" required="required">
+						<br/>
+						Dining Time
+						<br/>
+						<input type="time" name="time" id="time" required="required">
+						<br/>
+						Special Requirements
+						<br/>
+						<input type="text" name="req" id="req" required="required" placeholder="Special Requests">
+						<br/><br/>
+						<button type="submit" name="submit" value="submitform" class="css3button">SUBMIT</button>
+					</p>
+				</form>
 			</div>
 		</div>
 		
@@ -295,11 +306,11 @@
 		
 	</div>
 </body>
-	
+
 <script>
 	
 	var myIndex = 0;
-	carousel();
+		carousel();
 
 	function carousel() {
     var i;
@@ -314,4 +325,5 @@
 	}
 	
 </script>
+	
 </html>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- WEBSITE IS NOT RESPONSIVE, UPDATE TO BE RELEASED -->
 <html>
 		
 		<head>
@@ -86,7 +87,7 @@
 			nav a:hover {
 				background-color: white;    
 				color: black;
-				text-decoration: none;     
+				text-decoration: overline;     
 			}
 			
 			nav a:visited {
@@ -338,15 +339,17 @@
 			
 			.contacttext {
 				font-size: 25px;
-				margin-top: 1%;
+				margin-top: 5%;
 				margin-left: 5%;
 				margin-right: 0%;
+				margin-bottom: 5%;
 			}
 			
 			.contactmaps {
-				margin-top: -21%;
+				margin-top: -26%;
 				margin-left: 60%;
 				margin-right: 0%;
+				margin-bottom: 5%;
 			}
 			
 			button.css3button {
@@ -388,7 +391,31 @@
 			
 			/*-- FOOTER --*/
 
+			#column6 {
+				float: none;
+				width: 100%;
+				padding-top: 1%;
+			}
 			
+			#row6:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.footer {
+				background-color: #434343;
+				padding-top: 2%;
+				padding-bottom: 1%;
+				text-align: center;
+				color: white;
+			}
+			
+			h3 a {
+				text-decoration: none;
+				color: white;
+			}
+
 		</style>
 		<link href="https://fonts.googleapis.com/css?family=Bitter|Poppins" rel="stylesheet">
 		</head>
@@ -435,7 +462,7 @@
 						<span class="dot" onclick="currentSlide(3)"></span> 
 					</div>	
 								
-				<a name="#about">
+				<a name="about">
 					<div id="row2">
 						<div id="column2" class="menutitle1">
 							<h1>ABOUT US</h1>
@@ -456,7 +483,7 @@
 					</div>
 				</a>
 					
-				<a name="#menu">
+				<a name="menu">
 					<div id="row1">
 						<div id="column1" class="menutitle">
 							<h1>FOOD &amp; DRINK SELECTIONS</h1>
@@ -506,7 +533,7 @@
 					</div>
 				</a>
 				
-				<a name="#contact">
+				<a name="connect">
 					<div id="row5">
 						<div id="column5" class="menutitle2">
 								<h1>CONNECT WITH US</h1>
@@ -516,7 +543,7 @@
 						<div id="column4" class="contacttext">
 							<p>7428 14th Avenue<br/>Burnaby, V2N 0C5<br/>British Columbia, Canada<br/><br/>+1 (604) 928 2817<br/><br/>contact@bronzeandcopper.com</p>
 							<br/>
-							<form method="post" enctype="text/plain" action="mailto:marco.tjokro@outlook.com">
+							<form action="mailto:marco.tjokro@outlook.com" method="get">
 								<input type="email" name="email" id="email" size="45" required="required" placeholder="Subscribe to our e-newsletter">
 								<button type="submit" name="submit" value="submitform" class="css3button">SUBMIT</button>
 							</form>
@@ -527,8 +554,20 @@
 					</div>
 				</a>
 					
-					
+				<div id="row6">
+					<div id="column6" class="footer">
+						<h3>
+							<a href="index.html">Menu</a> 
+							<a href="#about">| About</a>
+							<a href="#menu">| Menu</a> 
+							<a href="#connect">| Connect</a>
+							<a href="reserve.html">| Reserve</a>
+						</h3>
+						<h3>Copyright 2017. All rights reserved. Bronze &amp; Copper Coffee.</h3>
+					</div>
 				</div>
+				
+			</div>
 				
 				<script>
 					var slideIndex = 1;
